@@ -1,3 +1,6 @@
+# Further adjustments needed for special characters: \n (newline), \s (space), \e (escape)
+# The adjusted final version is in the ../entry.rb file
+
 taruto_codes = File.read("single_line.rb")
 
 def format_spiral(input)

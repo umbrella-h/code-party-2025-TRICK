@@ -1,51 +1,51 @@
 # Further adjustments needed for special characters: \n (newline), \s (space), \e (escape)
 # The adjusted final version is in the ../entry.rb file
 
-    eval(%w(n           =1;cake_c           olor_sets           ={"🍊\\sMi           kan":[220           ,221,222,           223],"🍵\\       
-  sM         at       ch         a"       :[         70       ,7         1,       10         6,       10         7]       ,"         🌸\     
-\s     Sak    ur    a"     :[2    10    ,2     16,    21    7,     218    ],    "🍫     \\s    Ch    oc     o":    [1    30     ,17    2,    
-17   3,   17   4]   };   ad   zu   ki   _c   ol   or   s=   [9   5,   96   ,1   31   ,1   32   ];   ku   ri   _c   ol   or   =1   78   ;s   
-ym   bo        ls   =[   "▄        ▄"   ,"   █\        \s   ",   "▀        ▀"   ,"   \\        s█   ",   "▟        █"   ,"   █▙        ",   
- "█    ▛"     ,"     ▜█    ",     "█     █"    ];     ro     ws    =5     ;c     ol    s=     5;     gr    id     =A     rr    ay     .n    
-   ew   (rows          ){   Array          .n   ew(co          ls   )};fi          ll   _orde          r=   Array          .n   ew(ro       
+    eval(%w(s           ystem("st           ty\ssane"           );n=1;cak           e_color_s           ets={"🍊\s           Mikan":[2       
+  20         ,2       21         ,2       22         ,2       23         ],       "🍵         \s       Ma         tc       ha         ":     
+[7     0,7    1,    10     6,1    07    ],     "🌸\    sS    ak     ura    ":    [2     10,    21    6,     217    ,2    18     ],"    🍫\    
+sC   ho   co   ":   [1   30   ,1   72   ,1   73   ,1   74   ]}   ;a   dz   uk   i_   co   lo   rs   =[   95   ,9   6,   13   1,   13   2]   
+;k   ur        i_   co   lo        r=   17   8;        sy   mb   ol        s=   ["   ▄▄        ",   "█   \s        ",   "▀   ▀"        ,"   
+ \s    █"     ,"     ▟█    ",     "█     ▙"    ,"     █▛     ",    "▜     █"     ,"    ██     "]     ;r    ow     s=     5;    co     ls    
+   =5   ;grid          =A   rray.          ne   w(row          s)   {Arra          y.   new(c          ol   s)};f          il   l_ord       
                                                                                                                                             
-    ws){Array           .new(cols           )};x,y=0,           0;dx,dy=0           ,1;cake_c           olor_keys           =cake_col       
-  or         _s       et         s.       ke         ys       ;c         ol       or         _i       nd         ex       =0         ;l     
-oo     p{c    ak    e_     col    or    s=     cak    e_    co     lor    _s    et     s[c    ak    e_     col    or    _k     eys    [c    
-ol   or   _i   nd   ex   ]]   ;c   ur   re   nt   _c   ol   or   _s   et   =c   ak   e_   co   lo   r_   ke   ys   [c   ol   or   _i   nd   
-ex   ];        co   lo   r_        in   de   x=        (c   ol   or        _i   nd   ex        +1   )%   ca        ke   _c   ol        or   
- _k    ey     s.     si    ze     ;g     ri    d=     Ar     ra    y.     ne     w(    ro     ws     ){    Ar     ra     y.    ne     w(    
-   co   ls)};          fi   ll_or          de   r=Arr          ay   .new(          ro   ws){A          rr   ay.ne          w(   cols)       
+    er=Array.           new(rows)           {Array.ne           w(cols)};           x,y=0,0;d           x,dy=0,1;           cake_colo       
+  r_         ke       ys         =c       ak         e_       co         lo       r_         se       ts         .k       ey         s;     
+co     lor    _i    nd     ex=    0;    lo     op{    ca    ke     _co    lo    rs     =ca    ke    _c     olo    r_    se     ts[    ca    
+ke   _c   ol   or   _k   ey   s[   co   lo   r_   in   de   x]   ];   cu   rr   en   t_   co   lo   r_   se   t=   ca   ke   _c   ol   or   
+_k   ey        s[   co   lo        r_   in   de        x]   ;c   ol        or   _i   nd        ex   =(   co        lo   r_   in        de   
+ x+    1)     %c     ak    e_     co     lo    r_     ke     ys    .s     iz     e;    gr     id     =A    rr     ay     .n    ew     (r    
+   ow   s){Ar          ra   y.new          (c   ols)}          ;f   ill_o          rd   er=Ar          ra   y.new          (r   ows){       
                                                                                                                                             
-    };x,y=0,0           ;dx,dy=0,           1;n=1;loo           p{nx,ny=x           +dx,y+dy;           if(n==row           s*cols)th       
-  en         (g       ri         d[       x]         [y       ]=         sy       mb         ol       s[         8]       ;f         il     
-l_     ord    er    [x     ][y    ]=    n)     ;el    si    f(     nx<    0|    |n     x>=    ro    ws     ||n    y<    0|     |ny    >=    
-co   ls   ||   !g   ri   d[   nx   ][   ny   ].   ni   l?   )t   he   n(   if   (d   x=   =0   &&   dy   ==   1)   th   en   (g   ri   d[   
-x]   [y        ]=   sy   mb        ol   s[   5]        );   el   si        f(   dx   ==        1&   &d   y=        =0   )t   he        n(   
- gr    id     [x     ][    y]     =s     ym    bo     ls     [6    ])     ;e     ls    if     (d     x=    =0     &&     dy    ==     -1    
-   )t   hen(g          ri   d[x][          y]   =symb          ol   s[7])          ;e   lsif(          dx   ==-1&          &d   y==0)       
+    Array.new           (cols)};x           ,y=0,0;dx           ,dy=0,1;n           =1;loop{n           x,ny=x+dx           ,y+dy;if(       
+  n=         =r       ow         s*       co         ls       )t         he       n(         gr       id         [x       ][         y]     
+=s     ymb    ol    s[     8];    fi    ll     _or    de    r[     x][    y]    =n     );e    ls    if     (nx    <0    ||     nx>    =r    
+ow   s|   |n   y<   0|   |n   y>   =c   ol   s|   |!   gr   id   [n   x]   [n   y]   .n   il   ?)   th   en   (i   f(   dx   ==   0&   &d   
+y=   =1        )t   he   n(        gr   id   [x        ][   y]   =s        ym   bo   ls        [5   ])   ;e        ls   if   (d        x=   
+ =1    &&     dy     ==    0)     th     en    (g     ri     d[    x]     [y     ]=    sy     mb     ol    s[     6]     );    el     si    
+   f(   dx==0          &&   dy==-          1)   then(          gr   id[x]          [y   ]=sym          bo   ls[7]          );   elsif       
                                                                                                                                             
-    then(grid           [x][y]=sy           mbols[4])           end;fill_           order[x][           y]=n;dx,d           y=dy,-dx;       
-  nx         ,n       y=         x+       dx         ,y       +d         y)       el         se       (i         f(       dx         ==     
-0&     &dy    ==    1)     the    n(    gr     id[    x]    [y     ]=s    ym    bo     ls[    0]    );     els    if    (d     x==    1&    
-&d   y=   =0   )t   he   n(   gr   id   [x   ][   y]   =s   ym   bo   ls   [1   ])   ;e   ls   if   (d   x=   =0   &&   dy   ==   -1   )t   
-he   n(        gr   id   [x        ][   y]   =s        ym   bo   ls        [2   ])   ;e        ls   if   (d        x=   =-   1&        &d   
- y=    =0     )t     he    n(     gr     id    [x     ][     y]    =s     ym     bo    ls     [3     ])    en     d;     fi    ll     _o    
-   rd   er[x]          [y   ]=n)e          nd   ;x,y=          nx   ,ny;p          ri   nt"\\          e[   2J";p          ri   nt"\\       
+    (dx==-1&&           dy==0)the           n(grid[x]           [y]=symbo           ls[4])end           ;fill_ord           er[x][y]=       
+  n;         dx       ,d         y=       dy         ,-       dx         ;n       x,         ny       =x         +d       x,         y+     
+dy     )el    se    (i     f(d    x=    =0     &&d    y=    =1     )th    en    (g     rid    [x    ][     y]=    sy    mb     ols    [0    
+])   ;e   ls   if   (d   x=   =1   &&   dy   ==   0)   th   en   (g   ri   d[   x]   [y   ]=   sy   mb   ol   s[   1]   );   el   si   f(   
+dx   ==        0&   &d   y=        =-   1)   th        en   (g   ri        d[   x]   [y        ]=   sy   mb        ol   s[   2]        );   
+ el    si     f(     dx    ==     -1     &&    dy     ==     0)    th     en     (g    ri     d[     x]    [y     ]=     sy    mb     ol    
+   s[   3])en          d;   fill_          or   der[x          ][   y]=n)          en   d;x,y          =n   x,ny;          pr   int"\       
                                                                                                                                             
-    e[1m\\e[3           8;5;#{cak           e_colors[           0]}m#{cur           rent_colo           r_set}\\e           [0m";prin       
-  t"         \\       n\         \n       ";         gr       id         .e       ac         h_       wi         th       _i         nd     
-ex     {|r    ow    ,i     |ro    w.    ea     ch_    wi    th     _in    de    x{     |ce    ll    ,j     |or    de    r=     fil    l_    
-or   de   r[   i]   [j   ]|   |0   ;i   f(   or   de   r>   0)   th   en   (b   g_   co   lo   r=   ca   ke   _c   ol   or   s[   (o   rd   
-er   -1        )%   ca   ke        _c   ol   or        s.   si   ze        ];   te   xt        _c   ol   or        =a   dz   uk        i_   
- co    lo     rs     [(    or     de     r-    1)     %a     dz    uk     i_     co    lo     rs     .s    iz     e]     ;i    f(     ce    
-   ll   ==sym          bo   ls[8]          )t   hen(p          ri   nt"\\          e[   48;5;          #{   bg_co          lo   r}m\\       
+    e[2J";pri           nt"\e[1m\           e[38;5;#{           cake_colo           rs[0]}m#{           current_c           olor_set}       
+  \e         [0       m"         ;p       ri         nt       "\         n\       n"         ;g       ri         d.       ea         ch     
+_w     ith    _i    nd     ex{    |r    ow     ,i|    ro    w.     eac    h_    wi     th_    in    de     x{|    ce    ll     ,j|    or    
+de   r=   fi   ll   _o   rd   er   [i   ][   j]   ||   0;   if   (o   rd   er   >0   )t   he   n(   bg   _c   ol   or   =c   ak   e_   co   
+lo   rs        [(   or   de        r-   1)   %c        ak   e_   co        lo   rs   .s        iz   e]   ;t        ex   t_   co        lo   
+ r=    ad     zu     ki    _c     ol     or    s[     (o     rd    er     -1     )%    ad     zu     ki    _c     ol     or    s.     si    
+   ze   ];if(          ce   ll==s          ym   bols[          8]   )then          (p   rint"          \e   [48;5          ;#   {bg_c       
                                                                                                                                             
-    e[38;5;#{           kuri_colo           r}m\\e[1m           #{cell||"           \\s\\s"}\           \e[0m");e           lsif(symb       
-  ol         s[       4.         .7       ].         in       cl         ud       e?         (c       el         l)       )t         he     
-n(     pri    nt    "\     \e[    38    ;5     ;#{    bg    _c     olo    r}    m\     \e[    1m    #{     cel    l}    \\     e[0    m"    
-)e   ls   e(   pr   in   t"   \\   e[   48   ;5   ;#   {b   g_   co   lo   r}   m\   \e   [3   8;   5;   #{   te   xt   _c   ol   or   }m   
-\\   e[        1m   #{   ce        ll   ||   "\        \s   \\   s"        }\   \e   [0        m"   )e   nd        )e   ls   e(        pr   
- in    t"     \\     s\    \s     ")     en    d}     ;p     ri    nt     "\     \n    "}     ;i     f(    n>     ro     ws    *c     ol    
-   s)   then(          br   eak;)          en   d;n+=          1;   sleep          (0   .1)}}          )*   "")##          ##   #####       
+    olor}m\e[           38;5;#{ku           ri_color}           m\e[1m#{c           ell||"\s\           s"}\e[0m"           );elsif(s       
+  ym         bo       ls         [4       ..         7]       .i         nc       lu         de       ?(         ce       ll         ))     
+th     en(    pr    in     t"\    e[    38     ;5;    #{    bg     _co    lo    r}     m\e    [1    m#     {ce    ll    }\     e[0    m"    
+)e   ls   e(   pr   in   t"   \e   [4   8;   5;   #{   bg   _c   ol   or   }m   \e   [3   8;   5;   #{   te   xt   _c   ol   or   }m   \e   
+[1   m#        {c   el   l|        |"   \s   \s        "}   \e   [0        m"   )e   nd        )e   ls   e(        pr   in   t"        \s   
+ \s    ")     en     d}    ;p     ri     nt    "\     n"     };    if     (n     >r    ow     s*     co    ls     )t     he    n(     br    
+   ea   k;)en          d;   n+=1;          sl   eep(0          .1   )}})*          ""   )####          ##   #####          ##   #####       
                                                                                                                                             

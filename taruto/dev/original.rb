@@ -1,3 +1,5 @@
+system("stty sane") # Reset terminal settings to defaults
+
 # ________  
 #   ____  | 
 #  |    | | 
@@ -54,13 +56,13 @@ loop {
     elsif nx < 0 || nx >= rows || ny < 0 || ny >= cols || !grid[nx][ny].nil?
       # Place a corner triangle symbol based on the direction of the turn
       if dx == 0 && dy == 1 # Turning from right to down
-        grid[x][y] = symbols[5] # "◣"
+        grid[x][y] = symbols[5] # "█▙"
       elsif dx == 1 && dy == 0 # Turning from down to left
-        grid[x][y] = symbols[6] # "◤"
+        grid[x][y] = symbols[6] # "█▛"
       elsif dx == 0 && dy == -1 # Turning from left to up
-        grid[x][y] = symbols[7] # "◥"
+        grid[x][y] = symbols[7] # "▜█"
       elsif dx == -1 && dy == 0 # Turning from up to right
-        grid[x][y] = symbols[4] # "◢"
+        grid[x][y] = symbols[4] # "▟█"
       end
       fill_order[x][y] = n
       dx, dy = dy, -dx # Turn clockwise
@@ -68,13 +70,13 @@ loop {
     else
       # Place the current symbol in the grid based on direction
       if dx == 0 && dy == 1 # Moving right
-        grid[x][y] = symbols[0] # "__"
+        grid[x][y] = symbols[0] # "▄▄"
       elsif dx == 1 && dy == 0 # Moving down
-        grid[x][y] = symbols[1] # "| "
+        grid[x][y] = symbols[1] # "█ "
       elsif dx == 0 && dy == -1 # Moving left
-        grid[x][y] = symbols[2] # "‾‾"
+        grid[x][y] = symbols[2] # "▀▀"
       elsif dx == -1 && dy == 0 # Moving up
-        grid[x][y] = symbols[3] # " |"
+        grid[x][y] = symbols[3] # " █"
       end
       fill_order[x][y] = n
     end
