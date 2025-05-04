@@ -1,4 +1,7 @@
 # code-party-2025-TRICK
+
+![taruto gif](docs/taruto.gif)
+
 This repository documents my explorations during the RubyKaigi 2025 Code Party, focusing on the TRICK, Reline, and IRB group led by tompng!
 
 - Began with an introduction to basic ASCII art syntax, guided by tompng san. ([See examples](simple_ascii_examples)). 🐣 (Special thanks to Tada san for the assistance during this phase!)
