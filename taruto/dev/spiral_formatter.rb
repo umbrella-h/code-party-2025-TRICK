@@ -64,5 +64,5 @@ def format_spiral(input)
   lines.join("\n")
 end
 
-formatted = format_spiral(taruto_codes)
-File.write("formatted.rb", formatted)
+formatted_codes = format_spiral(taruto_codes)
+File.write("formatted.rb", formatted_codes)
